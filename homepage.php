@@ -8,13 +8,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
     <link href="assets/css/landingpage.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand ms-5 title" href="#">Nino Gym</a>
+            <a class="navbar-brand ms-5 title" hrsewa/sewa.phpf="#">Nino Gym</a>
             <a class="nav-link pe-5 text-white ms-auto" href="login/login.php"><i class="fa-solid fa-user pe-2"></i>Login</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -27,7 +29,7 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 ssspe-3">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#hero">Home</a>
                         </li>
@@ -41,15 +43,15 @@
                             <a class="nav-link" href="#lowerbody">LOWER BODY WORKOUTS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pe-5" href="login/login.php"><i class="fa-solid fa-user pe-2"></i>Login</a>
+                            <!-- <a class="nav-link pe-5" href="index.php"><i class="fa-solid fa-user pe-2"></i>Logout</a> -->
                         </li>
 
                     </ul>
                 </div>
             </div>
-            
+
         </div>
-        
+
     </nav>
 
     <div id="hero" class="carousel slide" data-bs-ride="carousel">
@@ -87,8 +89,15 @@
                     <p class="h5 mb-3">4 sets: 40 seconds on/ 20 seconds rest.</p>
                     <p class="h5 mb-3">1 minute rest between sets.</p>
                 </div>
-                <div class="col-md-5">
-                    <iframe class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="560" height="315" style="height: 255px" src="https://www.youtube.com/embed/Zqk2MF71qyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="col-md-5 d-flex justify-content-center align-items-center">
+                    <!-- <iframe class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="560" height="315" style="height: 255px" src="https://www.youtube.com/embed/Zqk2MF71qyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                    <div class="card ">
+                        <div class="card-body">
+                            <h5 class="card-title">FAT BURNING (30 MINS)</h5>
+                            <p class="card-text">Rp. 20.000,00</p>
+                            <a href="sewa/sewa.php" class="btn btn-primary">Pesan Sekarang</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -108,8 +117,15 @@
                     </p>
                     <p class="h5 mb-3">Do as many rounds as you can in 20 minutes.</p>
                 </div>
-                <div class="col-md-5">
-                    <iframe width="560" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="height: 255px" height="315" src="https://www.youtube.com/embed/F4G07WYSsZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="col-md-5 d-flex justify-content-center align-items-center">
+                    <!-- <iframe width="560" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="height: 255px" height="315" src="https://www.youtube.com/embed/F4G07WYSsZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                        <div class="card ">
+                        <div class="card-body">
+                            <h5 class="card-title">20 MINUTE FULL BODY BLAST</h5>
+                            <p class="card-text">Rp. 20.000,00</p>
+                            <a href="sewa/sewa.php" class="btn btn-primary">Pesan Sekarang</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -140,8 +156,15 @@
                     <p class="h5 mb-3">#4 Push up from knees</p>
                     <p class="h5 mb-3">#5 Floor press</p>
                 </div>
-                <div class="col-md-5 wow fadeInUp" data-wow-delay="0.2s">
-                    <iframe class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="height: 255px" width="560" height="315" src="https://www.youtube.com/embed/7YFsaGjuu1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="col-md-5 wow fadeInUp d-flex justify-content-center align-items-center" data-wow-delay="0.2s">
+                    <!-- <iframe class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="height: 255px" width="560" height="315" src="https://www.youtube.com/embed/7YFsaGjuu1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                    <div class="card ">
+                        <div class="card-body">
+                            <h5 class="card-title">BEGINNERS ARMS</h5>
+                            <p class="card-text">Rp. 20.000,00</p>
+                            <a href="sewa/sewa.php" class="btn btn-primary">Pesan Sekarang</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -158,8 +181,15 @@
                     <p class="h5 mb-3">#4 Floor press</p>
                     <p class="h5 mb-3">#5 Skull crushers</p>
                 </div>
-                <div class="col-md-5">
-                    <iframe class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="height: 255px" width="560" height="315" src="https://www.youtube.com/embed/cpi4ziswNCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="col-md-5 wow fadeInUp d-flex justify-content-center align-items-center">
+                    <!-- <iframe class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="height: 255px" width="560" height="315" src="https://www.youtube.com/embed/cpi4ziswNCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                        <div class="card ">
+                        <div class="card-body">
+                            <h5 class="card-title">INTERMEDIATE ARMS</h5>
+                            <p class="card-text">Rp. 20.000,00</p>
+                            <a href="sewa/sewa.php" class="btn btn-primary">Pesan Sekarang</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -177,8 +207,15 @@
                     <p class="h5 mb-3">#5 Arnold press</p>
                     <p class="h5 mb-3">12-15 reps of each exercise. 4 sets/1min rest in between sets.</p>
                 </div>
-                <div class="col-md-5">
-                    <iframe width="500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="height: 255px" height="285" src="https://www.youtube.com/embed/Kr_nGUvNCJQ" title="UPPER BODY: STRENGTHEN AND SCULPT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col-md-5 wow fadeInUp d-flex justify-content-center align-items-center">
+                    <!-- <iframe width="500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="height: 255px" height="285" src="https://www.youtube.com/embed/Kr_nGUvNCJQ" title="UPPER BODY: STRENGTHEN AND SCULPT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <div class="card ">
+                        <div class="card-body">
+                            <h5 class="card-title">UPPER BODY STRENGTHEN AND SCULPT (25 MINS)</h5>
+                            <p class="card-text">Rp. 20.000,00</p>
+                            <a href="sewa/sewa.php" class="btn btn-primary">Pesan Sekarang</a>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -209,8 +246,15 @@
                     <p class="h5 mb-3">#4 Goblet squat</p>
                     <p class="h5 mb-3">#5 Kettlebell swings</p>
                 </div>
-                <div class="col-md-5">
-                    <iframe class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="height: 255px" width="500" height="285" src="https://www.youtube.com/embed/77hYo33TBHU" title="Beginners leg workout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col-md-5 wow fadeInUp d-flex justify-content-center align-items-center">
+                    <!-- <iframe class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="height: 255px" width="500" height="285" src="https://www.youtube.com/embed/77hYo33TBHU" title="Beginners leg workout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <div class="card ">
+                        <div class="card-body">
+                            <h5 class="card-title">BEGINNERS LEGS</h5>
+                            <p class="card-text">Rp. 20.000,00</p>
+                            <a href="sewa/sewa.php" class="btn btn-primary">Pesan Sekarang</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -225,8 +269,15 @@
                     <p class="h5 mb-3">#4 Stiff leg deadlift</p>
                     <p class="h5 mb-3">#5 Barbell pulse squats</p>
                 </div>
-                <div class="col-md-5">
-                    <iframe width="500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="height: 255px" height="285" src="https://www.youtube.com/embed/2jhOjsLJjKw" title="Intermediate leg workout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col-md-5 wow fadeInUp d-flex justify-content-center align-items-center">
+                    <!-- <iframe width="500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="height: 255px" height="285" src="https://www.youtube.com/embed/2jhOjsLJjKw" title="Intermediate leg workout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <div class="card ">
+                        <div class="card-body">
+                            <h5 class="card-title">INTERMEDIATE LEGS</h5>
+                            <p class="card-text">Rp. 20.000,00</p>
+                            <a href="sewa/sewa.php" class="btn btn-primary">Pesan Sekarang</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -242,8 +293,15 @@
                     <p class="h5 mb-3">#5 Goblet squats</p>
                     <p class="h5 mb-3">12-15 Reps of each exercise. 4 sets. 1 minute rest between sets.</p>
                 </div>
-                <div class="col-md-5">
-                    <iframe class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="height: 255px" width="500" height="285" src="https://www.youtube.com/embed/VnncvKbnJD0" title="STRONG LEAN LEGS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col-md-5 wow fadeInUp d-flex justify-content-center align-items-center">
+                    <!-- <iframe class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="height: 255px" width="500" height="285" src="https://www.youtube.com/embed/VnncvKbnJD0" title="STRONG LEAN LEGS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <div class="card ">
+                        <div class="card-body">
+                            <h5 class="card-title">STRONG LEAN LEGS (25 MINS)</h5>
+                            <p class="card-text">Rp. 20.000,00</p>
+                            <a href="sewa/sewa.php" class="btn btn-primary">Pesan Sekarang</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -259,8 +317,15 @@
                     <p class="h5 mb-3">#5 Hamstring Step Outs - 30 secs</p>
                     <p class="h5 mb-3">Complete 3-4 sets of each action and rest for 45 seconds between sets.</p>
                 </div>
-                <div class="col-md-5">
-                    <iframe class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="height: 255px" width="500" height="285" src="https://www.youtube.com/embed/EV8mrNqg6_s" title="Beginner Dumbbell Leg Workout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col-md-5 wow fadeInUp d-flex justify-content-center align-items-center">
+                    <!-- <iframe class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="height: 255px" width="500" height="285" src="https://www.youtube.com/embed/EV8mrNqg6_s" title="Beginner Dumbbell Leg Workout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <div class="card ">
+                        <div class="card-body">
+                            <h5 class="card-title">BEGINNER DUMBBELL LEG WORKOUT</h5>
+                            <p class="card-text">Rp. 20.000,00</p>
+                            <a href="sewa/sewa.php" class="btn btn-primary">Pesan Sekarang</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

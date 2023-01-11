@@ -1,3 +1,14 @@
+<?php 
+require '../../function/function.php';
+$admins = query("SELECT * FROM admin");
+
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,8 +35,7 @@
                 <a class="navbar-brand me-auto text-danger" href="#">Dash<span class="text-warning">Board</span></a>
                 <ul class="nav ms-auto">
                     <li class="nav-item dropstart">
-                        <a class="nav-link text-dark ps-3" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown">
+                        <a class="nav-link text-dark ps-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
                             <i class="fa fa-bell fa-lg py-2" aria-hidden="true"></i>
                             <span class="badge bg-danger">10</span>
                         </a>
@@ -36,8 +46,7 @@
                             </div>
                             <a class="dropdown-item py-2" href="#">
                                 <div class="d-flex overflow-hidden">
-                                    <i class="fa fa-envelope fa-lg dropdown-icons bg-primary text-white p-2 me-2"
-                                        aria-hidden="true"></i>
+                                    <i class="fa fa-envelope fa-lg dropdown-icons bg-primary text-white p-2 me-2" aria-hidden="true"></i>
                                     <div class="d-block content">
                                         <p class="lh-1 mb-0">Safna Prasetiono</p>
                                         <span class="content-text">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -47,8 +56,7 @@
                             </a>
                             <a class="dropdown-item py-2" href="#">
                                 <div class="d-flex overflow-hidden">
-                                    <i class="fa fa-file fa-lg dropdown-icons bg-warning text-white p-2 me-2"
-                                        aria-hidden="true"></i>
+                                    <i class="fa fa-file fa-lg dropdown-icons bg-warning text-white p-2 me-2" aria-hidden="true"></i>
                                     <div class="d-block content">
                                         <p class="lh-1 mb-0">file informations</p>
                                         <span class="content-text">your file has exceeded the limit.</span>
@@ -57,8 +65,7 @@
                             </a>
                             <a class="dropdown-item py-2" href="#">
                                 <div class="d-flex overflow-hidden">
-                                    <i class="fa fa-hdd-o fa-lg dropdown-icons bg-danger text-white p-2 me-2"
-                                        aria-hidden="true"></i>
+                                    <i class="fa fa-hdd-o fa-lg dropdown-icons bg-danger text-white p-2 me-2" aria-hidden="true"></i>
                                     <div class="d-block content">
                                         <p class="lh-1 mb-0">Storage</p>
                                         <span class="content-text">Your storage is full, delete some files.</span>
@@ -68,8 +75,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropstart">
-                        <a class="nav-link text-dark ps-3 pe-1" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown">
+                        <a class="nav-link text-dark ps-3 pe-1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
                             <img src="../../assets/images/user/user.png" alt="user" class="img-user">
                         </a>
                         <div class="dropdown-menu mt-2 pt-0" aria-labelledby="navbarDropdown">
@@ -149,7 +155,7 @@
                     </div>
                 </div>
 
-                <div class="row g-3 mb-3">
+                <!-- <div class="row g-3 mb-3">
                     <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                         <div class="card p-2 shadow">
                             <div class="d-flex align-items-center px-2">
@@ -206,17 +212,33 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="row g-2">
                     <div class="col-12 col-lg-6">
                         <div class="d-block rounded shadow bg-white p-3">
-                            <canvas id="myChartOne"></canvas>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <div class="d-block rounded shadow bg-white p-3">
-                            <canvas id="myChartTwo"></canvas>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No. </th>
+                                        <th scope="col">Username</th>
+                                        <th scope="col">Paket</th>
+                                        <th scope="col">Harga</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <?php $i = 1; ?>
+                                    <?php foreach($admins as $admin) : ?>
+                                    <tr>
+                                        <th scope="row"><?php echo $i ; ?></th>
+                                        <td><?php echo $admin["username_sewa"] ; ?></td>
+                                        <td><?php echo $admin["paket"] ; ?></td>
+                                        <td>Rp. 20.000,00</td>
+                                    </tr>
+                                    <?php $i++; ?>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>

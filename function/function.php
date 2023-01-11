@@ -2,6 +2,17 @@
 $connect=mysqli_connect("localhost", "root", "", "gym");
 
 
+function query($query) {
+    global $connect;
+    $result = mysqli_query($connect, $query);
+    $row = [];
+    while ($row = mysqli_fetch_assoc($result)) {
+        $rows[] = $row;
+    }
+    return $rows;
+}
+
+
 function regis($data){
     global $connect;
     $username=strtolower(stripslashes($data ["username"]));
@@ -23,6 +34,19 @@ function regis($data){
 
     mysqli_query($connect, "INSERT INTO users VALUES('', '$username', '$password')");
     
+    return mysqli_affected_rows($connect);
+}
+
+function tambah($data){
+
+    global $connect;
+
+    $username_sewa = $data ["username_sewa"];
+    $paket = $data ["paket"];
+
+    $query = "INSERT INTO admin  VALUES ('', '$username_sewa' ,'$paket')";
+    mysqli_query($connect, $query);
+
     return mysqli_affected_rows($connect);
 }
 

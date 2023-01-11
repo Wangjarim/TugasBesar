@@ -13,9 +13,23 @@ if(isset($_POST["submit"])){
         $verify=password_verify($password, $row["password"]);
 
         if($verify){
-            echo"<script>window.location.href='../admin/dashboard/dashboard.php'</script>";
+            echo"<script>window.location.href='../homepage.php'</script>";
             exit;
         }
+    }
+
+    $result2 = mysqli_query($connect, "SELECT * FROM users WHERE username = '$username' AND password = '$password'");
+    $cek = mysqli_num_rows($result2);
+
+    if($cek > 0){
+        global $result2;
+
+        $data = mysqli_fetch_assoc($result2);
+
+        if($data["level"] === "admin"){
+            header("location: ../admin/dashboard/dashboard.php");
+        }
+
     }
     $error=true;
 }
